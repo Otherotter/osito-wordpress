@@ -1,0 +1,63 @@
+/* site */
+
+
+/* gigpress */
+.gigpress-sidebar-status a{
+    color: black;
+}
+
+.gigpress-sidebar-status{
+    background: white;
+    color: black;
+    padding: 0.1rem;
+}
+
+.gigpress-sidebar-status:hover{
+    color: rgb(240, 0, 0);
+}
+
+.gigpress-tickets-link:hover{
+    color: rgb(240, 0, 0);
+}
+
+.gigpress-listing{
+    display: grid;
+    grid-gap: 1em;
+}
+.gigpress-listing li{   
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 10% 30% 30% 30%;
+    justify-content: space-between;
+    max-width: 100%;
+    justify-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background 0.3s ease-in-out;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+
+/* responsive */
+@media only screen and (max-width: 700px) {
+    /* gigpress */
+    .gigpress-listing li{   
+        display: grid;
+        grid-template-columns: unset;
+        justify-content: center;
+       
+    }
+    
+}
+
+@media only screen and (max-width: 500px) {
+    /* site */
+    #footer-navbar{
+        display: inline;
+        justify-content: space-evenly;
+        grid-auto-flow: row;
+        row-gap: 3rem;
+    } 
+}
+

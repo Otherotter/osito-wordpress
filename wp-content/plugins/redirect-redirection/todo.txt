@@ -1,0 +1,4 @@
+1. disable redirect settings for 404s-rule only if editing it --- ?
+2. when adding a new 404s-rule and changed have been made in global settings 
+add that 404s-rule with default settings except redirect_code --- ?
+3. show a notification when adding a new 404s-rule and trying to change --- ?
