@@ -895,22 +895,34 @@ input[type="submit"],
 
 
 /* CUSTOM */
+#primary-search-wrapper{
+	display: none !important;
+}
+
+#wp-custom-header-video-button{
+	display: none;
+}
+
+.entry-content a:not(.more-link):not(.button):not(.wp-block-button__link){
+	text-decoration: none;
+}
 
 #footer-navbar{
     display: grid;
-    justify-content: space-evenly;
+    justify-content: center;
     grid-auto-flow: column;
-    column-gap: 3rem;
+    column-gap: 1rem;
+	text-align: center;
 }
 
-#page-post-59 {
+#page-post-27 {
 	background-image: url("./tree.jpg");
 	background-position: center; /* Center the image */
 	background-repeat: no-repeat; /* Do not repeat the image */
 	background-size: cover; /* Resize the background image to cover the entire container */
 	min-height: 100vh;
 }
-#page-post-59 footer{
+#page-post-27 footer{
     display: none;
 }
 
@@ -918,11 +930,13 @@ input[type="submit"],
 	border: solid;
 	min-height: 3rem;
     padding: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem !important;
+	
 }
 
 .elementor-icon-list-item a{
 	padding: 10px;
+
 }
 
 .social-navigation a, .social-links-menu a{
@@ -933,7 +947,7 @@ input[type="submit"],
 	margin: unset;
 }
 
-.menu-social-media-container{
+.menu-footer-container{
 	text-align: center;
 }
 
@@ -952,9 +966,12 @@ textarea, input[type="text"], input[type="email"]{
 
 #contactpage-form-button{
 	background: white;
-    /* color: white; */
     padding: 0.1rem;
 	color: red;
+}
+
+.wpcf7-spinner{
+	display: none;
 }
 
 .wpcf7-form{
